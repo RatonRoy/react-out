@@ -6,6 +6,7 @@ import Education from './components/Education/Education';
 import NoRouting from './components/NoRouting/NoRouting';
 import Friends from './components/Friends/Friends';
 import Header from './components/Header/Header';
+import FriendDetail from './components/FriendDetail/FriendDetail';
 
 function App() {
   return (
@@ -18,7 +19,8 @@ function App() {
           <Route path='/Home' element={<Home></Home>}></Route>
           <Route path='/About' element={<About></About>}></Route>
           <Route path='/Education' element={<Education></Education>}></Route>
-          <Route path='/Friends' element={<Friends></Friends>}></Route>
+          <Route path='/Friends' element={<Friends></Friends>}></Route> 
+          <Route path ='/friend/:friendId' element = {<FriendDetail></FriendDetail>}></Route>
           <Route path='*' element={<NoRouting></NoRouting>}></Route>
         </Routes>
       </div>
